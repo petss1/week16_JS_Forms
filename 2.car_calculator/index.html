@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="stylesheet" href="./assets/normalize.css">
+    <title>Car calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Калькулятор стоимости автомобиля</h1>
+        <label for="car-brand">Марка автомобиля:</label>
+        <select id="car-brand">
+            <option value="reno">Renault</option>
+            <option value="opel">Opel</option>
+            <option value="mazda">Mazda</option>
+            <option value="jaguar">Jaguar</option>
+        </select>
+        <br><br>
+        <label for="car-model">Модель автомобиля:</label>
+        <select id="car-model">
+        </select>
+        <br><br>
+        <label for="fuel-type">Тип топлива:</label>
+        <select id="fuel-type">
+            <option value="petrol">Бензин</option>
+            <option value="diesel">Дизель</option>
+            <option value="gas">Газ</option>
+            <option value="electric">Электричество</option>
+        </select>
+        <br><br>
+        <label for="engine-volume">Объем двигателя (л):</label>
+        <input type="number" id="engine-volume" min="1.1" max="3.5" step="0.1">
+        <br><br>
+        <label for="car-condition">Состояние автомобиля:</label>
+        <select id="car-condition">
+            <option value="new">Новый</option>
+            <option value="used">Подержанный</option>
+        </select>
+        <br><br>
+        <label for="ownerCount">Количество владельцев:</label><br>
+        <select id="ownerCount">
+            <option value="1-2">1-2 владельца</option>
+            <option value="3-and-more">Более 3-х владельцев</option>
+        </select>
+        <br><br>
+        <label for="paymentMethod">Способ оплаты:</label><br>
+        <select id="paymentMethod">
+            <option value="card">Картой</option>
+            <option value="cash">Наличными</option>
+            <option value="invoice">Счет на юридическое лицо</option>
+        </select>
+        <br><br>
+        <div class="result">
+            Стоимость: <span id="price">0</span> рублей
+        </div>
+        <br><br>
+        <button id="calculate-btn">Рассчитать стоимость</button>
+        </div>
+    <script src="assets/script/index.js"></script>
+</body>
+</html>

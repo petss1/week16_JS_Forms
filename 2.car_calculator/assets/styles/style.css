@@ -1,0 +1,26 @@
+.container {
+    width: 30vw;
+    margin: 5vw;
+    font-size: 20px;
+}
+
+.result {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+input.changed, select.changed {
+    background-color: #84aace;
+    transform: scale(1.05);
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #7360a8;
+}
